@@ -42,7 +42,7 @@ const App = () => {
     if (progress === 100) {
       setTimeout(() => {
         setIsReady(true);
-      }, 9000);
+      }, 7000);
     }
   }, [progress]);
 
