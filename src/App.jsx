@@ -28,7 +28,7 @@ const MainContent = () => {
       <About />
       <Tools />
       <Works />
-      <ContactSummary />
+      {/* <ContactSummary /> */}
       <Contact /> 
     </>
   );
