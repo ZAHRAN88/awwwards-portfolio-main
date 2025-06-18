@@ -1,0 +1,48 @@
+# Robots.txt for Mohamed Ossama Zahran Portfolio
+# https://mohamedossama.dev
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mohamedossama.dev/sitemap.xml
+
+# Specific directives for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block admin/dashboard access
+User-agent: *
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /.env
+Disallow: /node_modules/
+
+# Allow important portfolio sections
+User-agent: *
+Allow: /
+Allow: /#home
+Allow: /#about
+Allow: /#services
+Allow: /#work
+Allow: /#contact
+
+# Block development files
+User-agent: *
+Disallow: *.json$
+Disallow: *.log$
+Disallow: /src/
+Disallow: /.git/
+Disallow: /.vscode/
+
+# Cache directive
+# Crawl-delay: 1 
