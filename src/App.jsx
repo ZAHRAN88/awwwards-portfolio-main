@@ -14,7 +14,6 @@ import Preloader from "./components/Preloader";
 import Tools from "./sections/Tools";
 import NotFound from "./components/NotFound";
 import FollowingCursor from "./components/FollowingCursor";
-import Dashboard from "./components/Dashboard/Dashboard";
 import SEO from "./components/SEO";
 
 const MainContent = () => {
@@ -76,7 +75,6 @@ const App = () => {
         >
           <Routes>
             <Route path="/" element={<MainContent />} />
-            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
